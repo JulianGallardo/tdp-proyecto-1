@@ -110,7 +110,7 @@ public class SimplePresentationScreen extends JFrame {
 		lblLLabel_Imagen.setBounds(450, 43, 139, 144);
 		lblLLabel_Imagen.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblLLabel_Imagen);
-		ImageIcon image=new ImageIcon(SimplePresentationScreen.class.getResource("/images/logo-uns.png"));
+		ImageIcon image=new ImageIcon(SimplePresentationScreen.class.getResource(studentData.getPathPhoto()));
 		Icon imagen=new ImageIcon(image.getImage().getScaledInstance(lblLLabel_Imagen.getWidth(),lblLLabel_Imagen.getHeight(), Image.SCALE_DEFAULT));
 		lblLLabel_Imagen.setIcon(imagen);
 		
@@ -121,6 +121,7 @@ public class SimplePresentationScreen extends JFrame {
 		
 		
 	}
+	
 	private void setearHoraYFecha(JLabel aSetear){
 		Calendar fecha=new GregorianCalendar();
 		String fechaCompleta=String.format("%02d/%02d/%02d",fecha.get(Calendar.DATE),fecha.get(Calendar.MONTH)+1,fecha.get(Calendar.YEAR));

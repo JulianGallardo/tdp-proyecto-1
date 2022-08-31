@@ -11,7 +11,7 @@ public class Launcher {
         //creating and showing this application's GUI.
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-            	Student user=new Student(135005,"Gallardo","Julian","Juliangallardo26603@gmail.com","https://github.com/JulianGallardo","");
+            	Student user=new Student(135005,"Gallardo","Julian","Juliangallardo26603@gmail.com","https://github.com/JulianGallardo","/images/logo-uns.png");
             	JFrame gui=new SimplePresentationScreen(user);
             	gui.setVisible(true);
             }
